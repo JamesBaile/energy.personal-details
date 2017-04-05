@@ -1,13 +1,13 @@
 {
-  "name": "energy.enquiry-submitter",
+  "name": "energy.personal-details",
   "version": "1.0.0",
-  "description": "Submit an enquiry",
-  "main": "index.js",
+  "description": "Save the personal details of a customer",
+  "main": "server.js",
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "express": "^4.14.1",
-    "request": "^2.79.0",
-    "request-promise": "^4.1.1"
+    "express": "latest",
+    "mongoose": "latest",
+    "body-parser": "latest"
   }
 }
