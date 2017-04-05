@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser')
 var PersonalDetails = require('./models/personal-details');
 
-// Use environment defined port or 3000
+// Use environment defined port or 3001
 var port = process.env.PORT || 3001;
 var mongoConnection = process.env.MONGO || 'mongodb://mongo:27017/energy-usage';
 
