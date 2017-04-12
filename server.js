@@ -70,8 +70,8 @@ route.post(function(req, res) {
 });
 
 route.get(function(req, res) {
-  console.log('searching for customer ' + req.params.customerId);
-  PersonalDetails.findOne({"customerId": req.params.customerId}, function(err, details) {
+  console.log('searching for customer ' + req.query.customerId);
+  PersonalDetails.findOne({"customerId": req.query.customerId}, function(err, details) {
     if (err)
       res.send(err);
 
@@ -81,7 +81,7 @@ route.get(function(req, res) {
 
 
 route.put(function(req, res) {
-  PersonalDetails.findOne({"customerId": req.params.customerId}, function(err, details) {
+  PersonalDetails.findOne({"customerId": req.query.customerId}, function(err, details) {
     if (err)
       res.send(err);
 
@@ -108,7 +108,7 @@ route.put(function(req, res) {
 });
 
 route.delete(function(req, res) {
-  PersonalDetails.findOneAndRemove({"customerId": req.params.customerId}, function(err, details) {
+  PersonalDetails.findOneAndRemove({"customerId": req.query.customerId}, function(err, details) {
     if (err)
       res.send(err);
 
