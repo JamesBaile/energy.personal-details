@@ -15,7 +15,7 @@ var PersonalDetailsSchema   = new mongoose.Schema({
   electricityUsage: Number,
   electricityUsagePeriod: Number,
   electricityLastBillingPeriod: Number,
-  electricityUsafeType: Number
+  electricityUsageType: Number
 });;
 
 // Export the Mongoose model
