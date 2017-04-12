@@ -9,12 +9,14 @@ var PersonalDetailsSchema   = new mongoose.Schema({
   mobilePhoneNumber: String,
   postcode: String,
   gasUsage: Number,
-  gasUsagePeriod: String,
-  gasLastBillingPeriod: Date,
+  gasUsagePeriod: Number,
+  gasLastBillingPeriod: Number,
+  gasUsageType: Number,
   electricityUsage: Number,
-  electricityUsagePeriod: String,
-  electricityLastBillingPeriod: Date
-});
+  electricityUsagePeriod: Number,
+  electricityLastBillingPeriod: Number,
+  electricityUsafeType: Number
+});;
 
 // Export the Mongoose model
 module.exports = mongoose.model('PersonalDetails', PersonalDetailsSchema);
