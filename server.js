@@ -70,6 +70,7 @@ route.post(function(req, res) {
 });
 
 route.get(function(req, res) {
+  console.log('searching for customer ' + req.params.customerId);
   PersonalDetails.findOne({"customerId": req.params.customerId}, function(err, details) {
     if (err)
       res.send(err);
